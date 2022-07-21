@@ -7,6 +7,13 @@
 	
 	int main(int argc, char** argv)
 	{
+		CherGE::Log::Init();
+		CherGE::Log::GetCoreLogger()->warn("Initialized log!");
+		CherGE::Log::GetClientLogger()->info("Hello!");
+		CH_CORE_WARN("Initialized log!");
+		int a = 1;
+		char ch = 'p';
+		CH_INFO("fatal! {0}{1}",a,ch);
 		auto app = CherGE::CreateApplication();
 		app->Run();
 		delete app;

@@ -96,6 +96,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>CH_PLATFORM_WINDOWS;CH_BUILD_DLL;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)CherGE\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -110,6 +111,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>CH_PLATFORM_WINDOWS;CH_BUILD_DLL;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)CherGE\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -124,6 +126,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>CH_PLATFORM_WINDOWS;CH_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)CherGE\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -138,6 +141,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>CH_PLATFORM_WINDOWS;CH_BUILD_DLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)CherGE\vendor\spdlog\include;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -147,12 +151,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="src\CherGE\Log.h" />
     <ClInclude Include="src\CherGE\Application.h" />
     <ClInclude Include="src\CherGE.h" />
     <ClInclude Include="src\CherGE\Core.h" />
     <ClInclude Include="src\CherGE\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="src\CherGE\Log.cpp" />
     <ClCompile Include="src\CherGE\Application.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

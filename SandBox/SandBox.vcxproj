@@ -96,7 +96,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>CH_PLATFORM_WINDOWS;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)CherGE\src;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)CherGE\vendor\spdlog\include;$(SolutionDir)CherGE\src;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -111,7 +111,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>CH_PLATFORM_WINDOWS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)CherGE\src;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)CherGE\vendor\spdlog\include;$(SolutionDir)CherGE\src;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -126,7 +126,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>CH_PLATFORM_WINDOWS;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)CherGE\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)CherGE\vendor\spdlog\include;$(SolutionDir)CherGE\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -141,7 +141,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>CH_PLATFORM_WINDOWS;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)CherGE\src;</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)CherGE\vendor\spdlog\include;$(SolutionDir)CherGE\src;</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
