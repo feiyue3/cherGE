@@ -8,8 +8,8 @@
 	int main(int argc, char** argv)
 	{
 		CherGE::Log::Init();
-		CherGE::Log::GetCoreLogger()->warn("Initialized log!");
-		CherGE::Log::GetClientLogger()->info("Hello!");
+		/*CherGE::Log::GetCoreLogger()->warn("Initialized log!");
+		CherGE::Log::GetClientLogger()->info("Hello!");*/
 		CH_CORE_WARN("Initialized log!");
 		int a = 1;
 		char ch = 'p';

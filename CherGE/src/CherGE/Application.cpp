@@ -1,5 +1,6 @@
 #include "Application.h"
-
+#include "CherGE/Events/ApplicationEvent.h"
+#include "Log.h"
 namespace CherGE {
 	Application::Application()
 	{
@@ -12,6 +13,10 @@ namespace CherGE {
 
 	void Application::Run()
 	{
+		WindowResizeEvent e(1280,720);
+
+		CH_TRACE(e);
+
 		while (true);
 	}
 }
